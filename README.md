@@ -3,7 +3,7 @@
 #
 [![Generic badge](https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/qeeqbox/seahorse/master/info&label=version&query=$.version&colorB=blue)](https://github.com/qeeqbox/seahorse/blob/master/changes.md) [![Generic badge](https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/qeeqbox/seahorse/master/info&label=docker-compose&query=$.dockercompose&colorB=green)](https://github.com/qeeqbox/seahorse/blob/master/changes.md)
 
-Seahorse is a ELKFH (Elastic, Logstash, Kibana, Filebeat and Honeypot) system for monitoring security tools that interact with (HTTP, HTTPS, SSH, RDP, VNC, Redis, MySQL, MONGO, SMB, LDAP)
+ELKFH (Elastic, Logstash, Kibana, Filebeat and Honeypot) system for monitoring security tools that interact with (HTTP, HTTPS, SSH, RDP, VNC, Redis, MySQL, MONGO, SMB, LDAP)
 
 ## Kibana Interface
 <img src="https://raw.githubusercontent.com/qeeqbox/seahorse/master/readme/intro.gif" style="max-width:768px"/>
