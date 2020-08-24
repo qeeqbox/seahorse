@@ -1,0 +1,75 @@
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+    - /var/log/mysql/mysql.log
+  tags: mysql
+
+- type: log
+  enabled: true
+  paths:
+    - /var/log/mongodb/mongod.log
+  tags: mongo
+
+- type: log
+  enabled: true
+  paths:
+    - /var/log/auth.log
+  tags: sshd
+
+- type: log
+  enabled: true
+  paths:
+    - /var/log/redis-monitor.logs
+  tags: redis
+
+- type: log
+  enabled: true
+  paths:
+    - /var/log/samba/log.smbd
+  tags: smbd
+
+- type: log
+  enabled: true
+  paths:
+    - /var/log/ldap.logs
+  tags: ldap
+
+- type: log
+  enabled: true
+  paths:
+    - /var/log/vsftpd.log
+  tags: ftp
+
+- type: log
+  enabled: true
+  paths:
+    - /var/log/vnc/.vnc/*.log
+  tags: vnc
+
+- type: log
+  enabled: true
+  paths:
+    - /var/log/xrdp.log
+  tags: rdp
+
+- type: log
+  enabled: true
+  paths:
+    - /var/log/sniffer_s.logs
+  tags: sniffer
+
+- type: log
+  enabled: true
+  paths:
+    - /var/log/apache2/access.log
+  tags: apache
+
+setup.kibana:
+  host: "http://kibana:5601"
+  username: "elastic"
+  password: "changeme"
+
+output.logstash:
+  enabled: true
+  hosts: ["logstash:5044"]
