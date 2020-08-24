@@ -22,14 +22,15 @@ chmod +x ./run.sh
 ./run.sh auto_configure
 ```
 
-## Current Servers/Emulators
+## Current Servers
 - HTTP (Server using Apache)
 - HTTPS (Server using Apache)
 - SSH (Server using custom OpenSSH)
-- SMB (Server using impacket)
+- FTP (Server vsftpd)
+- SMB (Server using samba)
 - ldap (Server using slapd)
-- VNC (Emulator using Twisted)
-- RDP (Server using Twisted)
+- VNC (Emulator using tightvncserver)
+- RDP (Server using xrdp)
 - Redis (Emulator using redis-server)
 - Mysql (Emulator using mysql-community-server)
 
