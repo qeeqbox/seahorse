@@ -20,6 +20,9 @@ git clone https://github.com/qeeqbox/seahorse.git
 cd seahorse
 chmod +x ./run.sh
 ./run.sh auto_configure
+
+Wait ~2-3 mins until the web browser opens up
+
 ```
 
 ## Current Servers
