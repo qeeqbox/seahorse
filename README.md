@@ -26,16 +26,16 @@ Wait ~2-3 mins until the web browser opens up
 ```
 
 ## Current Servers
-- HTTP (Server using Apache)
-- HTTPS (Server using Apache)
-- SSH (Server using custom OpenSSH)
-- FTP (Server vsftpd)
-- SMB (Server using samba)
-- ldap (Server using slapd)
-- VNC (Emulator using tightvncserver)
-- RDP (Server using xrdp)
-- Redis (Emulator using redis-server)
-- Mysql (Emulator using mysql-community-server)
+- HTTP (Apache)
+- HTTPS (Apache)
+- SSH (Custom OpenSSH)
+- FTP (vsftpd)
+- SMB (samba)
+- ldap (slapd)
+- VNC (tightvncserver)
+- RDP (xrdp)
+- Redis (redis-server)
+- Mysql (mysql-community-server)
 
 ## Changes
 - 2020.V.01.01
