@@ -21,7 +21,7 @@ cd seahorse
 chmod +x ./run.sh
 ./run.sh auto_configure
 
-Wait ~2-3 mins until the web browser opens up
+Wait ~2-10 mins until the web browser opens up (until seahorse_initializer_1 exit with 0)
 
 ```
 
