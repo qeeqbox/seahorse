@@ -93,5 +93,7 @@ By using this framework, you are accepting the license terms of each package lis
 - https://github.com/psf/requests/blob/master/LICENSE
 - https://github.com/pyca/cryptography/blob/master/LICENSE
 
+
 ## Disclaimer\Notes
-- Remember to change the passwords
+- Do not deploy without proper configuration
+- Setup some security group rules and remove default credentials
