@@ -1,7 +1,7 @@
 <p align="center"> <img src="https://raw.githubusercontent.com/qeeqbox/seahorse/master/readme/seahorselogo.png"></p>
 
 #
-[![Generic badge](https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/qeeqbox/seahorse/master/info&label=version&query=$.version&colorB=blue)](https://github.com/qeeqbox/seahorse/blob/master/changes.md) [![Generic badge](https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/qeeqbox/seahorse/master/info&label=docker-compose&query=$.dockercompose&colorB=green)](https://github.com/qeeqbox/seahorse/blob/master/changes.md)
+[![Generic badge](https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/qeeqbox/seahorse/master/info&label=version&query=$.version&colorB=blue&style=flat-square)](https://github.com/qeeqbox/seahorse/blob/master/changes.md) [![Generic badge](https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/qeeqbox/seahorse/master/info&label=docker-compose&query=$.dockercompose&colorB=green&style=flat-square)](https://github.com/qeeqbox/seahorse/blob/master/changes.md) [![Generic badge](https://img.shields.io/static/v1?label=%F0%9F%91%8D&message=Thank%20You%20For%20The%20Support!!&color=yellow&style=flat-square)](https://github.com/qeeqbox/woodpecker/stargazers)
 
 ELKFH (Elastic, Logstash, Kibana, Filebeat and Honeypot) system for monitoring security tools that interact with (HTTP, HTTPS, SSH, RDP, VNC, Redis, MySQL, MONGO, SMB, LDAP)
 
