@@ -44,56 +44,13 @@ Wait ~2-10 mins until the web browser opens up (until seahorse_initializer_1 exi
 - Add more services
 
 ## Resources
-- https://www.elastic.co/guide/index.html
-- https://scapy.readthedocs.io/en/latest/
-- Please let me know if i missed a resource or dependency
+`elastic, scapy`
 
 ## Other Licenses
-By using this framework, you are accepting the license terms of each package listed below:
-- https://www.elastic.co/downloads/elasticsearch
-- https://www.elastic.co/downloads/logstash
-- https://www.elastic.co/downloads/kibana
-- https://www.elastic.co/downloads/beats/filebeat
-- https://www.openbsd.org/policy.html
-- https://www.gnu.org/philosophy/free-sw
-- https://en.wikipedia.org/wiki/Zlib_License
-- https://github.com/chef-boneyard/build-essential/blob/master/LICENSE
-- https://packages.debian.org/sid/libssl-dev
-- https://kb.acronis.com/system/files/content/2010/02/8220/lsof.txt
-- http://supervisord.org/
-- https://www.rsyslog.com/doc/v8-stable/licensing.html
-- https://www.openldap.org/software/release/license.html
-- https://www.mysql.com/about/legal/licensing/oem/
-- https://redis.io/topics/license
-- https://www.mongodb.com/community/licensing
-- https://en.wikipedia.org/wiki/Samba_(software)
-- https://en.wikipedia.org/wiki/Vsftpd
-- https://github.com/vladmihalcea/db-util
-- https://www.tightvnc.com/licensing-tvnserver.php
-- https://github.com/neutrinolabs/xrdp/blob/devel/COPYING
-- https://www.apache.org/licenses/LICENSE-2.0
-- https://packages.debian.org/sid/iptables-persistent
-- https://www.tcpdump.org/license.html
-- https://nmap.org/npsl/
-- https://packages.debian.org/search?keywords=iputils-ping
-- https://docs.python.org/3/license.html
-- https://en.wikipedia.org/wiki/Pip_(package_manager)
-- https://www.psycopg.org/license/
-- https://gitlab.com/psmisc/psmisc
-- https://github.com/tutumcloud/dnsutils/blob/master/LICENSE
-- https://github.com/python-ldap/python-ldap/blob/master/LICENCE
-- https://github.com/FreeRDP/FreeRDP/blob/master/LICENSE
-- http://net-tools.sourceforge.net/
-- https://github.com/kevinburke/sshpass/blob/master/LICENSE
-- https://github.com/paramiko/paramiko/blob/master/LICENSE
-- https://dev.mysql.com/doc/dev/connector-python/8.0/license.html
-- https://github.com/mongodb/mongo-python-driver/blob/master/LICENSE
-- https://miketeo.net/blog/projects/pysmb
-- https://github.com/sibson/vncdotool/blob/main/LICENSE.txt
-- https://github.com/psf/requests/blob/master/LICENSE
-- https://github.com/pyca/cryptography/blob/master/LICENSE
+By using this framework, you are accepting the license terms of all these packages: `elasticsearch, logstash, kibana, filebeat, openbsd, openbsd, Zlib, build-essential, libssl-dev, lsof, supervisord, rsyslog, openldap, mysql, redis, mongodb, Samba, Vsftpd, db-util, tvnserver, xrdp, apache, iptables, tcpdump, nmap, iputils-ping, python, Pip, psycopg, psmisc, dnsutils, python-ldap, FreeRDP, net-tools, sshpass, paramiko, connector-python, mongo-python-driver, pysmb, vncdotool, requests, cryptography`
 
 
 ## Disclaimer\Notes
 - Do not deploy without proper configuration
 - Setup some security group rules and remove default credentials
+- Please let me know if i missed a resource or dependency
