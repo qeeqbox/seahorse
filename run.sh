@@ -4,8 +4,8 @@ echo -e "Current servers (HTTP, HTTPS, SSH, FTP, RDP, VNC, SMB, MONGO, MYSQL and
 setup_requirements () {
 	sudo apt update -y
 	sudo apt install -y linux-headers-$(uname -r) docker.io jq xdg-utils curl
-	sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-	sudo chmod +x /usr/local/bin/docker-compose
+	curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+	chmod +x /usr/local/bin/docker-compose
 	which docker-compose && echo "Good"
 	which docker && echo "Good"
 }
@@ -21,11 +21,11 @@ xdg-open http://localhost:5601/login
 }
 
 dev_project () {
-	sudo docker-compose -f docker-compose-test.yml up --build
+	docker-compose -f docker-compose-test.yml up --build
 }
 
 stop_containers () {
-	sudo docker-compose down -v
+	docker-compose -f docker-compose-test.yml down -v
 	docker stop $(docker ps | grep seahorse_ | awk '{print $1}') 2>/dev/null
 } 
 
