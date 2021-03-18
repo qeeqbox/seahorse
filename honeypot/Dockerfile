@@ -17,7 +17,7 @@ RUN rm -f /var/log/auth.log && echo "[X] SSHD Auth Logs" > /var/log/auth.log && 
 #ldap ---------------------------------------------------------------
 RUN echo 'slapd/root_password password password' | debconf-set-selections && \
     echo 'slapd/root_password_again password password' | debconf-set-selections && \
-    apt-get install -y slapd=2.4.45+dfsg-1ubuntu1.6 ldap-utils=2.4.45+dfsg-1ubuntu1.6
+    apt-get install -y slapd ldap-utils
 RUN echo "slapd slapd/password1 password sysbackup" | debconf-set-selections && \ 
 	echo "slapd slapd/password2 password sysbackup" | debconf-set-selections && \ 
 	echo "slapd slapd/dump_database_destdir string /var/backups/slapd-VERSION" | debconf-set-selections  && \ 
@@ -38,7 +38,7 @@ RUN { \
         echo mysql-community-server mysql-community-server/re-root-pass password 'sysbackup'; \
         echo mysql-community-server mysql-community-server/remove-test-db select false; \
     } | debconf-set-selections && \
-    apt-get install -y mysql-server=5.7.31-0ubuntu0.18.04.1
+    apt-get install -y mysql-server
 RUN service mysql start && \
     mysql -u root -psysbackup -e 'ALTER USER "root"@"localhost" IDENTIFIED WITH mysql_native_password BY "sysbackup";' && \
     mysql -u root -psysbackup -e 'GRANT ALL PRIVILEGES ON *.* TO "root"@"%" IDENTIFIED BY "sysbackup";' && \
