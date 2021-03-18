@@ -27,6 +27,7 @@ dev_project () {
 stop_containers () {
 	docker-compose -f docker-compose-test.yml down -v
 	docker stop $(docker ps | grep seahorse_ | awk '{print $1}') 2>/dev/null
+	docker kill $(docker ps | grep seahorse_ | awk '{print $1}') 2>/dev/null
 } 
 
 deploy_aws_project () {
