@@ -49,8 +49,10 @@ Wait ~2-10 mins until the web browser opens up (until seahorse_initializer_1 exi
 ## Other Licenses
 By using this framework, you are accepting the license terms of all these packages: `elasticsearch, logstash, kibana, filebeat, openbsd, openbsd, Zlib, build-essential, libssl-dev, lsof, supervisord, rsyslog, openldap, mysql, redis, mongodb, Samba, Vsftpd, db-util, tvnserver, xrdp, apache, iptables, tcpdump, nmap, iputils-ping, python, Pip, psycopg, psmisc, dnsutils, python-ldap, FreeRDP, net-tools, sshpass, paramiko, connector-python, mongo-python-driver, pysmb, vncdotool, requests, cryptography`
 
-
 ## Disclaimer\Notes
 - Do not deploy without proper configuration
 - Setup some security group rules and remove default credentials
 - Please let me know if i missed a resource or dependency
+
+## Other Projects
+[![](https://github.com/qeeqbox/.github/blob/main/data/social-analyzer.png)](https://github.com/qeeqbox/social-analyzer) [![](https://github.com/qeeqbox/.github/blob/main/data/analyzer.png)](https://github.com/qeeqbox/analyzer) [![](https://github.com/qeeqbox/.github/blob/main/data/chameleon.png)](https://github.com/qeeqbox/chameleon) [![](https://github.com/qeeqbox/.github/blob/main/data/honeypots.png)](https://github.com/qeeqbox/honeypots) [![](https://github.com/qeeqbox/.github/blob/main/data/url-sandbox.png)](https://github.com/qeeqbox/url-sandbox) [![](https://github.com/qeeqbox/.github/blob/main/data/mitre-visualizer.png)](https://github.com/qeeqbox/mitre-visualizer) [![](https://github.com/qeeqbox/.github/blob/main/data/woodpecker.png)](https://github.com/qeeqbox/woodpecker) [![](https://github.com/qeeqbox/.github/blob/main/data/docker-images.png)](https://github.com/qeeqbox/docker-images) [![](https://github.com/qeeqbox/.github/blob/main/data/rhino.png)](https://github.com/qeeqbox/rhino)
