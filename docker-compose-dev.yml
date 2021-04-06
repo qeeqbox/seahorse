@@ -1,0 +1,101 @@
+version: '3.2'
+
+services:
+  elasticsearch:
+    build: ./elasticsearch
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    environment:
+      ES_JAVA_OPTS: "-Xmx256m -Xms256m"
+      ELASTIC_PASSWORD: changeme
+    networks:
+      - backend
+    logging:
+        driver: none
+
+  logstash:
+    build: ./logstash
+    ports:
+      - "5000:5000"
+      - "9600:9600"
+    expose: 
+      - "5044"
+    environment:
+      LS_JAVA_OPTS: "-Xmx256m -Xms256m"
+    depends_on:
+      - elasticsearch
+    networks:
+      - backend
+    logging:
+      driver: none
+
+  kibana:
+    build: ./kibana
+    ports:
+      - "5601:5601"
+    depends_on:
+      - elasticsearch
+    networks:
+      - backend
+      - frontend
+    logging:
+      driver: none
+
+  honeypot:
+    build: ./honeypot
+    volumes:
+      - logs:/var/log/
+    networks:
+      - backend
+      - frontend
+    ports:
+      - '21:21'
+      - '22:22'
+      - '135:135'
+      - '137:137'
+      - '138:138'
+      - '139:139'
+      - '445:445'
+      - '389:389'
+      - '3306:3306'
+      - '3389:3389'
+      - '6379:6379'
+      - '27017:27017'
+    logging:
+      driver: none
+
+  initializer:
+    build: ./initializer
+    networks:
+      - backend
+    command: python init.py
+    logging:
+      driver: none
+
+  filebeat:
+    build: ./filebeat
+    entrypoint: "filebeat -e -strict.perms=false"
+    volumes:
+      - logs:/var/log
+    depends_on: 
+      - logstash
+      - elasticsearch
+      - kibana
+      - honeypot
+    links: 
+      - logstash
+    networks:
+      - backend
+    logging:
+      driver: none
+
+networks:
+  frontend:
+    internal: false
+  backend:
+    internal: true
+
+volumes:
+  logs:
+    driver: local

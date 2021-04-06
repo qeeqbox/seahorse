@@ -177,7 +177,7 @@ RUN pip install scapy netifaces
 RUN pip install -U requests[socks]
 RUN pip install -Iv rsa==4.0
 COPY sniffer.py .
-
+EXPOSE 21 22 135 137 138 139 445 389 3306 3389 6379 27017
 RUN mkdir -p /var/log/supervisor && touch /var/log/supervisor/supervisord.log
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 CMD ["supervisord"]
